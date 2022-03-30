@@ -22,12 +22,12 @@ namespace Students.Controllers
 
 
         [HttpGet]
-        public ActionResult AddClient()
+        public ActionResult AddStudent()
         {
             return View();
         }
         [HttpPost]
-        public ActionResult AddClient(Student student)
+        public ActionResult AddStudent(Student student)
         {
             studentManager = new StudentManager();
             studentManager.AddStudent(student);
